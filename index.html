@@ -3,16 +3,31 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>マナトビ - ローカルテスト見直し支援</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>マナトビ | テスト見直し・復習アーカイブ</title>
+    
+    <!-- Meta Tags for Vercel Deployment -->
+    <meta name="description" content="テストのミスの原因を特定し、自分だけの復習リストを作成。端末内OCRでプライバシーも安心。">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="マナトビ | 学習見直し・対策アーカイブ">
+    <meta property="og:description" content="撮影するだけで文字起こし＆復習管理。あなたの苦手を「トビ」級の成長に変える。">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
     <style>
         body {
             font-family: 'Inter', 'Noto+Sans+JP', sans-serif;
-            background-color: #f0f4f8;
+            background-color: #f8fafc;
+            /* モバイルでのタップ時の青い枠を消す */
+            -webkit-tap-highlight-color: transparent;
         }
         .custom-scrollbar::-webkit-scrollbar {
             width: 4px;
@@ -23,6 +38,10 @@
         .custom-scrollbar::-webkit-scrollbar-thumb {
             background: #cbd5e1;
             border-radius: 10px;
+        }
+        /* ボタンのアニメーション */
+        .btn-active:active {
+            transform: scale(0.95);
         }
     </style>
 <script type="importmap">
