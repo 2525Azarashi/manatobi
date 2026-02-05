@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { TestReviewItem } from '../types';
+import { TestReviewItem } from '../types.ts';
 
 interface GalleryItemProps {
   item: TestReviewItem;

@@ -1,10 +1,10 @@
 
 import React, { useState, useEffect } from 'react';
-import Layout from './components/Layout';
-import Uploader from './components/Uploader';
-import GalleryItem from './components/GalleryItem';
-import { TestReviewItem, AppTab } from './types';
-import { transcribeImage } from './services/ocrService';
+import Layout from './components/Layout.tsx';
+import Uploader from './components/Uploader.tsx';
+import GalleryItem from './components/GalleryItem.tsx';
+import { TestReviewItem, AppTab } from './types.ts';
+import { transcribeImage } from './services/ocrService.ts';
 
 const App: React.FC = () => {
   const [items, setItems] = useState<TestReviewItem[]>([]);

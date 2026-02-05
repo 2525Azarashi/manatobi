@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { AppTab } from '../types';
+import { AppTab } from '../types.ts';
 
 interface LayoutProps {
   children: React.ReactNode;
